@@ -2,6 +2,12 @@
 
 A new Flutter project.
 
+Design : https://pixel.buildwithangga.com/details/chatty
+
+Screenshot :
+![image](https://user-images.githubusercontent.com/63090705/121883330-cb269500-cd3b-11eb-969c-80f9fabf36fb.png)
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
