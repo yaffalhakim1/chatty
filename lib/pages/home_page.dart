@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mychat/pages/message_page.dart';
 import 'package:mychat/theme.dart';
 import 'package:mychat/widgets/chat_tile.dart';
 
@@ -89,12 +90,22 @@ class HomePage extends StatelessWidget {
                         'Groups',
                         style: titleTextStyle,
                       ),
-                      ChatTile(
-                        imageUrl: 'assets/images/group1.png',
-                        name: 'Flutter group',
-                        text: 'butuh duit',
-                        time: 'Now',
-                        unread: true,
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => MessagePage(),
+                            ),
+                          );
+                        },
+                        child: ChatTile(
+                          imageUrl: 'assets/images/group1.png',
+                          name: 'Flutter group',
+                          text: 'butuh duit',
+                          time: 'Now',
+                          unread: true,
+                        ),
                       ),
                       ChatTile(
                         imageUrl: 'assets/images/group2.png',
